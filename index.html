@@ -1,1 +1,77 @@
-It Works
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Horizon Home Page</title>
+    <link rel="stylesheet" href="./css/basic.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"> </script>
+    <script src="./js/home.js"></script>
+</head>
+<body class="wrapper">
+<header>
+    <div class="logo"><img src="./images/horizon.jpg"></div>
+     <div class="logo-text font">Horizon Tech Ltd.</div>
+</header>
+<nav>
+    <ul class="navigation font">
+        <li><a href="index.html" class="link">Home</a></li>
+        <li><a href="service.html" class="link">Services</a></li>
+        <li><a href="contact.html" class="link">Contact</a></li>
+    </ul>
+</nav>
+<div class="banner">
+
+    <div class="carousel-outer">
+        <a href="#" class="previousLink"><<</a>
+        <div class="carousel-inner">
+
+            <img src="./images/webDevelopment.jpg" class="image-shown" id="1" data-index="0">
+            <img src="./images/consultancy.jpg" class="image-hide" id="2" data-index="1">
+            <img src="./images/architecture.jpg"  class="image-hide" id="3" data-index="2">
+            <img src="./images/cloudService.jpg" class="image-hide" data-index="3">
+
+        </div>
+        <a href="#" class="nextLink">>></a>
+    </div>
+    <div class="clear"></div>
+    <div class="control-carousel">
+        <ul id="controls">
+            <li><a href="#1" data-target="0">o</a></li>
+            <li><a href="#2" data-target="1">o</a></li>
+            <li><a href="#3" data-target="2">o</a></li>
+            <li><a href="#4" data-target="3">o</a></li>
+        </ul>
+    </div>
+    <!--<div class="banner-beta font">-->
+        <!--<h1>Our Services</h1>-->
+        <!--<p>Web Development and consulting</p>-->
+        <!--<h3 class="banner-beta-button"><a href="services.html" >Services</a></h3>-->
+    <!--</div>-->
+
+    </div>
+<div class="clear"></div>
+<div class="bottom-box">
+    <ul class="grid font">
+        <li class="col-1">
+            <a href=""><img src="./images/web%20development.png"></a>
+            <p class="bottom-box-heading">Contrarary to Popular</p>
+            <p class="bottom-box-info">Lorem ipsum dolor sit amet, et debet fastidii nec. Erant ignota quodsi ius eu,</p>
+        </li>
+        <li  class="col-2">
+            <a href=""><img src="./images/bank.png"></a>
+            <p class="bottom-box-heading">Contrarary to Popular</p>
+            <p class="bottom-box-info">Lorem ipsum dolor sit amet, et debet fastidii nec. Erant ignota quodsi ius eu, </p>
+        </li>
+        <li  class="col-3">
+            <a href=""><img src="./images/cloud.jpg"></a>
+            <p class="bottom-box-heading">Contrarary to Popular</p>
+            <p class="bottom-box-info">Lorem ipsum dolor sit amet, et debet fastidii nec. Erant ignota quodsi ius eu,.</p>
+        </li>
+    </ul>
+</div>
+
+
+</body>
+</html>

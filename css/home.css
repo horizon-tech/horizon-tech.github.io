@@ -1,0 +1,269 @@
+.font{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.logo{
+    float:left;
+    color:#FF9933;
+    font-size: 2em;
+    padding:1% 0 0 1%;
+    margin:0 0 1% 8%;
+     width:5%;
+     z-index: 3;
+ }
+.logo img{
+    width:100%;
+}
+h1{
+     vertical-align: top;
+}
+.logo-text{
+    float:left;
+    margin-top: 2%;
+    font-size: 2em;
+    width:28%;
+}
+.navigation{
+    float: left;
+    list-style-type: none;
+    margin-top:0;
+    width:40%;
+}
+.navigation li{
+    display: inline-block;
+    padding:0 0 1.6% 0;
+    margin:8% 0 0 10%;
+    font-size: .8em;
+  }
+.navigation li:hover, li:active a{
+    border-bottom: 3px solid #3083FF;
+}
+.link{
+    text-decoration: none;
+    font-weight: bold;
+    color:#000000;
+}
+.link:hover{
+    color:#3083FF;
+}
+.banner{
+    float:left;
+    background: url("../images/banner.jpg") repeat;
+    width:100%;
+    height:40%;
+    margin: 0;
+}
+.banner-alpha{
+    position: relative;
+    left:4%;
+    top:10%;
+    width:100%;
+    height:70%;
+    float: left;
+}
+/*.banner-alpha img{*/
+    /*position: relative;*/
+    /*left:50%;*/
+    /*top:10%;*/
+    /*height:60%;*/
+    /*width:60%;*/
+    /*padding:1% 0 1% 25%;*/
+    /*margin-left:60%;*/
+/*}*/
+.banner-beta{
+    position: relative;
+    left:20%;
+    top:0;
+    color:#000000;
+}
+.banner-beta h1{
+    font-size: 2em;
+    padding:2% 0 0 0;
+}
+.banner-beta p{
+    font-size: .6em;
+    padding:1% 2%;
+    margin:0 0 2% 0;
+}
+
+.banner-beta-button a{
+    /*border:1px solid grey;*/
+    padding:0.5% 2%;
+    margin:1% 1%;
+    width:3%;
+    background-color:#3083FF ;
+    text-decoration: none;
+    color:white;
+
+    }
+.banner-beta-button a:hover{
+    background-color: #D63333;
+}
+/*carasoul*/
+
+
+.carousel-outer{
+
+}
+.carousel-inner{
+    margin:2% 0 2% 0;
+    left:0;
+    width:80%;
+    height:40%;
+   float:left;
+    position: relative;
+
+}
+.carousel-inner img{
+    width:100%;
+    height:40%;
+    margin: 0 0 0 7%;
+}
+.image-shown{
+    display: inline-block;
+}
+.image-hide{
+    display: none;
+}
+.previousLink,.nextLink{
+    margin-top:10%;
+    float:left;
+    z-index:15;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 30px 30px 10 grey;
+}
+.carousel-outer a{
+    text-decoration: none;
+    color:#ffffff;
+}
+
+.previousLink{
+    margin:0 1% 0 2%;
+    }
+.nextLink{
+    margin-left: 12%;
+}
+.nextLink{
+    float:left;
+    position: relative;
+}
+
+.control-carousel{
+    margin-left:33%;
+}
+.control-carousel ul{
+    list-style: none;
+    bottom:0;
+    position: absolute;
+    margin: 16% auto;
+}
+.control-carousel li{
+    float:left;
+    width:10px;
+    height:10px;
+    border:1px solid white;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 20px;
+    background-color: #000000;
+}
+.control-carousel a{
+    text-decoration: none;
+    font-size:.6em;
+    padding:0;
+
+}
+.control-carousel li a:hover{
+    color: black;
+    background-color: white;
+    cursor:pointer;
+    }
+.activeLink{
+    background-color: white;
+    color:black;
+}
+
+.clear{
+    clear: both;
+}
+.bottom-box{
+    width:100%;
+    height:100%;
+}
+.bottom-box ul{
+    list-style-type: none;
+    margin-left: 20%;
+}
+.bottom-box ul li{
+    width:15.333333%;
+    display: inline-block;
+    padding:1%;
+    margin:2% 2% 0 0;
+}
+.bottom-box ul li img{
+    width:50%;
+    height:50%;
+    margin-left: 13%;
+}
+.grid{
+    display:table;
+    width:100%;
+    height:50px;
+}
+.bottom-box-heading{
+    color:#3083FF;
+    margin-bottom: 2%;
+}
+.bottom-box-info{
+    font-size: .8em;
+}
+
+
+@media only screen and (max-width: 480px) {
+.bottom-box{
+    float:left;
+}
+    .bottom-box ul li{
+        display: block;
+        width: 100%;
+    }
+    .grid{
+        display: block;
+    }
+    .navigation{
+        width:100%;
+        left:0;
+        }
+    .navigation li{
+        margin: 5%;
+
+    }
+    .navigation li:hover, li:active a{
+      text-decoration: none;
+        border: 0;
+    }
+    .logo-text{
+        width:70%;
+        font-size: 1.6em;
+        margin-left:2%;
+    }
+    .logo{
+        width:15%;
+            }
+    .carousel-inner{
+        float:left;
+        width:100%;
+    }
+    .carousel-inner img{
+        float: left;
+        width:90%;
+    }
+    .previousLink,.nextLink{
+        display: none;
+    }
+    .control-carousel{
+        display: none;
+    }
+
+}
