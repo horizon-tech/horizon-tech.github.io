@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+    </script>
+    <script src="../js/jquery-2.1.0.js"></script>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        .carousel-outer{
+
+        }
+        .carousel-inner{
+            width:400px;
+            height:300px;
+            /*margin-top:3%;*/
+            /*float:left;*/
+            /*position: relative;*/
+            border: 1px solid grey;
+            border-radius: 5px;
+            /*box-shadow: 3px 3px 2px #000000;*/
+            overflow: hidden;
+        }
+        /*.carousel-inner img{*/
+            /*width:70%;*/
+            /*height:50%;*/
+        /*}*/
+       /*.image-shown{*/
+           /*display: inline-block;*/
+       /*}*/
+        /*.image-hide{*/
+            /*display: none;*/
+        /*}*/
+        .previousLink,.nextLink{
+            margin-top:13%;
+            float:left;
+        }
+        .previousLink{
+            margin-right: 2%;
+        }
+        .nextLink{
+            margin-left: 2%;;
+        }
+
+        .nextLink{
+            float:left;
+            position: relative;
+        }
+        .carousel-inner ul{
+            list-style: none;
+
+            width:400px;
+            height:300px;
+
+        }
+        .carousel-inner ul li{
+            float:left;
+            /*display: inline-block;*/
+            width:400px;
+            height:300px;
+        }
+        .carousel-inner ul li img{
+            width:400px;
+            height:300px;
+        }
+        </style>
+    <script>
+        $(document).ready(function(){
+//            var currentImage,nextImage;
+//
+//
+//            $(".nextLink").on("click",function(e){
+//                 currentImage=$(".image-shown");
+//                 nextImage=currentImage.next();
+//                if($(nextImage).length==0) {
+//                    nextImage = $(".carousel-inner img").first();
+//                }
+//                    currentImage.removeClass("image-shown").addClass("image-hide").css("z-index:-10");
+//                    nextImage.removeClass("image-hide").addClass("image-shown").css("z-index:10");
+//                    $(".carousel-inner img").not([nextImage, currentImage]).css("z-index:1");
+//                    e.preventDefault();
+//
+//            });
+//
+//            $(".previousLink").on("click",function(e){
+//                currentImage=$(".image-shown");
+//                nextImage=currentImage.prev();
+//                if($(nextImage).length==0) {
+//                nextImage=$(".carousel-inner img").last();
+//                }
+//                    currentImage.removeClass("image-shown").addClass("image-hide").css("z-index:-10");
+//                    nextImage.removeClass("image-hide").addClass("image-shown").css("z-index:10");
+//                    $(".carousel-inner img").not([nextImage, currentImage]).css("z-index:1");
+//                    e.preventDefault();
+//
+//            });
+            setInterval(function() {
+                $(".carousel-inner").animate("margin-left:-600px", 2000, function(){
+                $(this).find("li:last").after($(this).find("li:first"));
+                $(".carousel-inner").css("margin-left:-600px");
+                });
+            },3000);
+            });
+    </script>
+</head>
+<body>
+<div class="carousel-outer">
+    <!--<a href="#" class="previousLink">Previous</a>-->
+        <div class="carousel-inner">
+                <ul>
+
+                <li><img src="images/bank.png" class="image-shown"></li>
+                <li><img src="images/horizon.jpg" class="image-hide"></li>
+                <li><img src="images/cloud.jpg"  class="image-hide"></li>
+                <<li><img src="images/web%20development.png"  class="image-hide"></li>
+                </ul>
+         </div>
+    <!--<a href="#" class="nextLink">Next</a>-->
+</div>
+</body>
+</html>

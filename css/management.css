@@ -1,0 +1,27 @@
+.col-3{
+    width:50%;
+}
+.col4{
+    width:50%;
+}
+.textFont{
+    font-size:1em;
+
+}
+.underline{
+    border-bottom: 1px solid grey;
+}
+
+.nameColor{
+    color:#3083FF;
+    /*font-weight: bold;*/
+}
+.textBold{
+    font-weight: bold;
+}
+@media only screen and (max-width: 480px) {
+    .col-3, .col-4{
+        width:100%;
+        padding-bottom: 2%;
+    }
+}

@@ -34,6 +34,7 @@ width:10%;
 
 width:70%;
 }
+
 .row{
     width:80%;
     float:left;
@@ -74,4 +75,31 @@ width:70%;
 }
 .row p{
     font-size:.8em;
+}
+@media only screen and (max-width: 480px) {
+
+   .main{
+       margin-left:2.5%;
+   }
+    .col p{
+        width:100%;
+        float:left;
+    }
+    .row{
+        width:100%;
+
+        }
+    .col-1
+    {
+        width:30%;
+
+    }
+    .col-2{
+        width:60%;
+        margin-right:0;
+    }
+    .main img{
+       margin:30% 0 0 0;
+
+    }
 }

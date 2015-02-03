@@ -1,7 +1,17 @@
 .font{
   font-family: 'Open Sans', sans-serif;
 }
+.wrapper{
+    width:100%;
+    margin:0 auto;
 
+}
+body{
+    overflow-x:hidden;
+    position: fixed;
+    overflow-y: scroll;
+    width:100%;
+}
 .logo{
     float:left;
     color:#FF9933;
@@ -51,7 +61,7 @@ h1{
     background: url("../images/banner.jpg") repeat;
     width:100%;
     height:40%;
-    margin: 0;
+    margin:0 auto;
 }
 .banner-alpha{
     position: relative;
@@ -107,17 +117,18 @@ h1{
 }
 .carousel-inner{
     margin:2% 0 2% 0;
-    left:0;
+    padding: 0;
+    left:10%;
     width:80%;
     height:40%;
-   float:left;
+    float:left;
     position: relative;
 
 }
 .carousel-inner img{
     width:100%;
-    height:40%;
-    margin: 0 0 0 7%;
+    height:300px;
+    margin: 0 auto;
 }
 .image-shown{
     display: inline-block;
@@ -126,12 +137,13 @@ h1{
     display: none;
 }
 .previousLink,.nextLink{
-    margin-top:10%;
+    /*width:20%;*/
+    margin-top:13%;
     float:left;
     z-index:15;
-    background-color: black;
-    border-radius: 10px;
-    box-shadow: 30px 30px 10 grey;
+    /*background-color: black;*/
+    /*border-radius: 10px;*/
+    /*box-shadow: 30px 30px 10 grey;*/
 }
 .carousel-outer a{
     text-decoration: none;
@@ -139,10 +151,14 @@ h1{
 }
 
 .previousLink{
-    margin:0 1% 0 2%;
-    }
+    margin-left:4%;
+        }
+.previousLink img{
+    width:80%;
+    height:80%;
+}
 .nextLink{
-    margin-left: 12%;
+    margin-left: 10%;
 }
 .nextLink{
     float:left;
@@ -150,13 +166,15 @@ h1{
 }
 
 .control-carousel{
-    margin-left:33%;
+    margin:0 0 0 38%;
+
 }
 .control-carousel ul{
     list-style: none;
     bottom:0;
     position: absolute;
-    margin: 16% auto;
+    margin: 15.5% auto;
+
 }
 .control-carousel li{
     float:left;
@@ -167,11 +185,13 @@ h1{
     text-align: center;
     margin: 0 20px;
     background-color: #000000;
+    overflow:hidden;
 }
 .control-carousel a{
     text-decoration: none;
-    font-size:.6em;
-    padding:0;
+    padding:1%;
+    border-radius: 10px;
+    color:white;
 
 }
 .control-carousel li a:hover{
@@ -181,7 +201,7 @@ h1{
     }
 .activeLink{
     background-color: white;
-    color:black;
+    /*color:black;*/
 }
 
 .clear{
@@ -199,7 +219,7 @@ h1{
     width:15.333333%;
     display: inline-block;
     padding:1%;
-    margin:2% 2% 0 0;
+    margin:0 2% 0 0;
 }
 .bottom-box ul li img{
     width:50%;
@@ -221,6 +241,11 @@ h1{
 
 
 @media only screen and (max-width: 480px) {
+    .wrapper{
+        margin:0;
+        padding:0;
+
+    }
 .bottom-box{
     float:left;
 }
@@ -236,7 +261,7 @@ h1{
         left:0;
         }
     .navigation li{
-        margin: 5%;
+        margin: 2.5%;
 
     }
     .navigation li:hover, li:active a{
@@ -251,13 +276,19 @@ h1{
     .logo{
         width:15%;
             }
+    .banner{
+        margin:0;
+
+    }
     .carousel-inner{
         float:left;
         width:100%;
+
     }
     .carousel-inner img{
         float: left;
-        width:90%;
+        width:80%;
+
     }
     .previousLink,.nextLink{
         display: none;
@@ -265,5 +296,12 @@ h1{
     .control-carousel{
         display: none;
     }
-
+    .bottom-box li{
+        margin-left: 5%;
+    }
+    .bottom-box ul li img{
+        width:30%;
+        height:30%;
+        margin-left: 10%;
+    }
 }
