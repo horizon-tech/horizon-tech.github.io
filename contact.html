@@ -4,35 +4,62 @@
     <meta charset="UTF-8">
     <title>Horizon Contact Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <link rel="stylesheet" href="css/basic.css">
-    <link rel="stylesheet" href="css/home.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"> </script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/service.css">
+    <link rel="stylesheet" href="css/management.css">
 </head>
 <body>
-<header>
-    <div class="logo"><img src="images/horizon.jpg"></div>
-    <div class="logo-text font">Horizon Tech Ltd.</div>
-</header>
-<nav>
-    <ul class="navigation font">
-        <li><a href="home.html" class="link">Home</a></li>
-        <li><a href="service.html" class="link">Services</a></li>
-        <li><a  href="management.html" class="link">Management</a></li>
-        <li><a href="contact.html" class="link">Contact</a></li>
-    </ul>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <span class="logo"><img src="images/horizon.jpg"></span>
+            <a class="navbar-brand logo-text font" href="#">Horizon Tech Ltd.</a>
+        </div>
+        <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html" class="headerMenu">Home</a></li>
+                <li><a href="service.html" class="headerMenu">Services</a></li>
+                <li><a href="management.html" class="headerMenu">Management</a></li>
+                <li><a href="contact.html" class="headerMenu">Contact</a></li>
+            </ul>
+
+        </div>
+    </div>
 </nav>
 <div class="ruler font">
 
-    <h2> Contact Us</h2>
+    <h2>Contact</h2>
 
 </div>
-<div class="main font">
-    <p>Horizon Tech Ltd.</p>
-    <p>No.5 Corbridge Drive</p>
-    <p>Luton</p>
-    <p>United Kingdom</p>
-    <p>Email:enquiry@horizon-tech.co.uk</p>
+<div class="clear"></div>
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-4">
+        <div class="textDeco">
+        <p>Horizon Tech Ltd.</p>
+        <p>No.5 Corbridge Drive</p>
+        <p>Luton</p>
+        <p>United Kingdom</p>
+        <p>Email:enquiry@horizon-tech.co.uk</p>
+        </div>
+    </div>
+    <div class="col-md-7">
 
+    </div>
 </div>
+<div class="row font">
+    <div class="col-md-12 footer">
+        <span>Copyright@HorizonTechLtd.</span></div>
+</div>
+
+
 </body>
 </html>
